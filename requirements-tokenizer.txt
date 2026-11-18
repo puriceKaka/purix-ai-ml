@@ -1,0 +1,5 @@
+# Required only for the optional, byte-level BPE tokenizer.
+tokenizers==0.23.3
+# Tokenizers does not use the Hub for local training/encoding; this upper bound
+# avoids pulling the newly introduced httpx2 transport for this offline feature.
+huggingface-hub<1.0
